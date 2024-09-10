@@ -60,9 +60,13 @@ def main():
       hint=['_']*len(word)
       wrong_guess=0
       while running:
+         
             display_hanman(wrong_guess)
             dis_hint(hint)
             answer=input("guess the letter :").lower()
+            if   not answer.isalpha() :
+               print("wrong input")
+               continue
             if answer in word:
                   for i in range(len(word)):
                      if word[i] == answer:
