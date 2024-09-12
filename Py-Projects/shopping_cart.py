@@ -13,7 +13,7 @@ while True:
       
 print("##########cart###############") 
 for food in foods:
-    print(food,end=" ")
+    print(food,end="")
 for p in price :
     total+=prices
     

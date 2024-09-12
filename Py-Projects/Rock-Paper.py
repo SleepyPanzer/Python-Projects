@@ -1,9 +1,9 @@
 import random
 
 options = ("rock", "paper", "scissors")
-running = True
+Stop = True
 
-while running:
+while Stop:
 
     player = None
     computer = random.choice(options)
@@ -26,7 +26,7 @@ while running:
         print("You lose!")
 
     if not input("Play again? (y/n): ").lower() == "y":
-        running = False
+        Stop = False
 
 print("Thanks for playing!")
 

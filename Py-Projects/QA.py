@@ -17,5 +17,7 @@ for item in QUESTIONS:
         print(f"you answer wrong the answer is {ANSWER[i]}")
 if score == len(QUESTIONS):
         print(f"you answered all the question right")
+else:
+     print(f"yor answer {score} question right ")
         
     
